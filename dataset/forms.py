@@ -6,8 +6,8 @@ from .models import Dataset
 # / Model Form
 
 class DatasetForm(ModelForm):
-	#first_name = forms.CharField(label="First Name", max_length=255)
-	#last_name = forms.CharField(label="Last Name", max_length=255)
+
 	class Meta:
 		model = Dataset
-		fields = ['first_name', 'last_name']
+		fields = ['set_name', 'star_count', 'solar_mass',
+		'big_radius', 'anchor_mass', 'time_step', 'frame_count']

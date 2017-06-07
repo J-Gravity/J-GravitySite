@@ -6,10 +6,16 @@ from django.db import models
 # Create your models here.
 
 class Dataset(models.Model):
+	set_name = models.CharField(max_length=255)
 	created = models.DateTimeField(auto_now_add=True)
 	updated = models.DateTimeField(auto_now=True)
-	first_name = models.CharField(max_length=255)
-	last_name = models.CharField(max_length=255)
-	
+	star_count = models.BigIntegerField()
+	solar_mass = models.BigIntegerField()
+	big_radius = models.BigIntegerField()
+	anchor_mass = models.BigIntegerField()
+	time_step = models.BigIntegerField()
+	frame_count = models.BigIntegerField()
+	approved = models.BooleanField()
+
 	def __str__(self):
-		return self.first_name
+		return self.set_name
