@@ -1,0 +1,221 @@
+
+<!DOCTYPE html>
+<html lang="en" class="wide wow-animation">
+	<head>
+		<!-- Site Title-->
+		<title>J-Gravity</title>
+		<meta name="format-detection" content="telephone=no">
+		<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta charset="utf-8">
+		<script type="text/javascript">
+	</script>
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+	<!-- Stylesheets-->
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway:400,300%7CMontserrat:400,700">
+	<link rel="stylesheet" href="css/style.css">
+	<!--[if lt IE 10]>
+	<div style="background: #212121; padding: 10px 0; box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3); clear: both; text-align:center; position: relative; z-index:1;"><a href="https://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
+	<script src="js/html5shiv.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<!-- Page-->
+	<div class="page text-center text-md-left">
+		<div id="bg-default">
+			<canvas id="bgCanvas"></canvas>
+			<div id="guiHolder"></div>
+		</div>
+		<!-- Page Header-->
+		<header class="page-head bg-image bg-image-1 bg-fixed section-55 section-sm-80 section-xl-bottom-270 section-lg-80">
+		<!-- RD Navbar-->
+		<div class="rd-navbar-wrap">
+			<nav data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-fixed" class="rd-navbar">
+			<div class="rd-navbar-inner">
+				<div class="rd-navbar-panel">
+					<button data-rd-navbar-toggle=".rd-navbar-nav-wrap" class="rd-navbar-toggle"><span></span></button>
+				</div>
+				<div class="rd-navbar-nav-wrap">
+					<!-- RD Navbar Nav-->
+					<ul class="rd-navbar-nav">
+						<li class="active"><a href="#home">Home</a></li>
+						<li><a href="#about">About us</a></li>
+						<li><a href="#team">Our team</a></li>
+						<li><a href="#news">News</a></li>
+						<li><a href="#contacts">Contact Us</a></li>
+					</ul>
+				</div>
+			</div>
+			</nav>
+		</div>
+		<div class="shell shell-wide">
+			<div class="range range-md-middle">
+				<div class="cell-md-6"><a href="index.html" class="brand"><img src="images/brand.png" width="235" height="142" alt="" class="img-responsive"></a></div>
+				<div class="cell-md-6 text-md-right">
+					<address class="address">
+						<p>Laniakea Supercluster, Virgo Cluster, Milky Way Galaxy, Orion Arm, Sol, Earth, 42 School Silicon Valley</p>
+						<dl class="contact-info">
+							<dt>Code:</dt>
+							<dd><a href="https://github.com/J-Gravity">J-Gravity Source</a></dd>
+						</dl>
+					</address>
+				</div>
+			</div>
+		</div>
+		<div id="home" data-type="anchor" class="shell shell-wide">
+			<div class="range">
+				<div class="cell-lg-preffix-1 cell-lg-8 cell-xl-6">
+					<h2 class="heading">The J-Gravity Crew<br class="hidden visible-lg-inline-block">
+						Exploring the simulated universe
+					</h2>
+					<p class="big postfix-xl-right--30">
+					The J-Gravity Crew is divided X teams. The teams are:
+					</p>	
+					<p class="big postfix-xl-right--30">
+					</p>
+					Physics
+					<p class="big postfix-xl-right--30">
+					Net Distribution
+					</p>
+					<p class="big postfix-xl-right--30">
+					Parallel Computing
+					</p>
+					<p class="big postfix-xl-right--30">
+					Web Development
+					</p>
+				</div>
+				<div class="cell-lg-preffix-1 cell-lg-1 text-md-right cell-md-bottom cell-xl-preffix-3">
+				</div>
+			</div>
+		</div>
+		</header>
+
+		<!-- Our team-->
+		<section class="section-55 bg-white section-xl-120 section-xl-bottom-0 section-lg-bottom-80">
+		<div id="team" data-type="anchor" class="shell shell-wide">
+			<div class="range range-lg-bottom range-xl-top">
+				<div class="cell-lg-preffix-1 cell-lg-2">
+				</div>
+				<div class="cell-lg-4 offset-xl-top-60">
+					<h2 class="heading heading-custom">J-Gravity Crew</h2>
+				</div>
+				<div class="cell-lg-6"></div>
+			</div>
+			<div class="range range-sm-center range-lg-left">
+
+				<div class="cell-sm-4 cell-lg-2 cell-xl-preffix-1"><img src="images/medium_pmclaugh.jpg" width="170" height="110" alt="" class="img-responsive">
+					<h4>Phil<br class="hidden visible-lg">
+						McLaughlin
+					</h4>
+					<p>GPU</p>
+				</div>
+
+				<div class="cell-sm-4 cell-lg-2 cell-xl-preffix-1"><img src="images/medium_palatorr.jpg" width="170" height="110" alt="" class="img-responsive">
+					<h4>Pablo<br class="hidden visible-lg">
+						Alatorre
+					</h4>
+					<p>Visualization</p>
+				</div>
+
+				<div class="cell-sm-4 cell-lg-2 cell-xl-preffix-1"><img src="images/medium_cyildiri.jpg" width="170" height="110" alt="" class="img-responsive">
+					<h4>Can<br class="hidden visible-lg">
+						Yildirim
+					</h4>
+					<p>Networking</p>
+				</div>
+
+				<div class="cell-sm-4 cell-lg-2 cell-xl-preffix-1"><img src="images/medium_smifsud.jpg" width="170" height="110" alt="" class="img-responsive">
+					<h4>Sawyer<br class="hidden visible-lg">
+							Mifsud
+					</h4>
+					<p>Physics</p>
+				</div>
+
+				<div class="cell-sm-4 cell-lg-2 cell-xl-preffix-1"><img src="images/medium_eliu.jpg" width="170" height="110" alt="" class="img-responsive">
+					<h4>Ezekiel<br class="hidden visible-lg">
+						Liu
+					</h4>
+					<p>GPU</p>
+				</div>
+
+				<div class="cell-sm-4 cell-lg-2 cell-xl-preffix-1"><img src="images/medium_iwagner.jpg" width="170" height="110" alt="" class="img-responsive">
+					<h4>Ian<br class="hidden visible-lg">
+						Wagner
+					</h4>
+					<p>Networking</p>
+				</div>
+
+				<div class="cell-sm-4 cell-lg-2 cell-xl-preffix-1"><img src="images/medium_kialvare.jpg" width="170" height="110" alt="" class="img-responsive">
+					<h4>Kim<br class="hidden visible-lg">
+						Alvare
+					</h4>
+					<p>Web</p>
+				</div>
+
+				<div class="cell-sm-4 cell-lg-2 cell-xl-preffix-1"><img src="images/medium_myoung.jpg" width="170" height="110" alt="" class="img-responsive">
+					<h4>Mason<br class="hidden visible-lg">
+						Young
+					</h4>
+					<p>Web</p>
+				</div>
+
+				<div class="cell-sm-4 cell-lg-2 cell-xl-preffix-1"><img src="images/medium_cterrill.jpg" width="170" height="110" alt="" class="img-responsive">
+					<h4>Colby<br class="hidden visible-lg">
+						Terrill
+					</h4>
+					<p>Web</p>
+				</div>
+
+				<div class="cell-sm-4 cell-lg-2 cell-xl-preffix-1"><img src="images/medium_ssmith.jpg" width="170" height="110" alt="" class="img-responsive">
+					<h4>Sean<br class="hidden visible-lg">
+						Smith
+					</h4>
+					<p>Networking</p>
+				</div>
+
+				<div class="cell-sm-4 cell-lg-2 cell-xl-preffix-1"><img src="images/medium_scollet.jpg" width="170" height="110" alt="" class="img-responsive">
+					<h4>Sam<br class="hidden visible-lg">
+						Collet
+					</h4>
+					<p>Networking</p>
+				</div>
+
+				<div class="cell-sm-4 cell-lg-2 cell-xl-preffix-1"><img src="images/medium_wdebs.jpg" width="170" height="110" alt="" class="img-responsive">
+					<h4>Wiley<br class="hidden visible-lg">
+						Debs
+					</h4>
+					<p>Networking</p>
+				</div>
+
+				<div class="cell-sm-4 cell-lg-2 cell-xl-preffix-1"><img src="images/medium_elee.jpg" width="170" height="110" alt="" class="img-responsive">
+					<h4>Eung Bum<br class="hidden visible-lg">
+						Lee
+					</h4>
+					<p>Networking</p>
+				</div>
+
+				<div class="cell-sm-8 offset-top-40 offset-sm-top-50 cell-lg-6 offset-lg-top-0 cell-xl-preffix-1 cell-xl-4 offset-xl-top--20 section-xl-bottom-0">
+					<div class="box-wrap-1">
+						<div class="box-wrap-1-caption">
+							<div class="h2 heading heading-mod">Active 42</div>
+							<div class="h3">peer-to-peer <br>students</div>
+						</div>
+						<div class="box-wrap-1-caption">
+							<div class="h2 heading heading-mod">15</div>
+							<div class="h3">j-gravity <br>members</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		</section>
+
+		</main>
+	</div>
+
+<!-- Java script-->
+<script src="js/core.min.js"></script>
+<script src="js/script.js"></script>
+<script type="text/javascript">
+</html>
