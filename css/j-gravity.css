@@ -1,0 +1,51 @@
+
+.j-gravity-header-2 > h2 {
+	text-shadow: 2px 2px 8px #000000;
+	font-weight: 590;
+}
+
+.j-gravity-header-3 > h3 {
+	text-shadow: 2px 2px 8px #000000;
+	font-weight: 600;
+}
+
+.j-gravity-right > h1 {
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    font-size: 5em;
+    margin-right: auto;
+  	margin-left: auto;
+  	padding-left: 15px;
+  	padding-right: 15px;
+  	min-width: 300px;
+  	max-width: 480px;
+}
+
+.heading {
+    position: relative;
+    display: inline-block;
+  }
+  .heading:after {
+    content: '';
+    /*position: absolute;*/
+    bottom: 15px;
+    right: -25px;
+    width: 140px;
+    border-top: 2px solid;
+    transition: .3s ease-out all;
+}
+
+/* ---- particles.js container ---- */
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #051644;
+  opacity: 0.5;
+}
+
+/* ---- Images ---- */
+
+.bg-image-1 {
+  background-image: url(../images/spiral.jpg);
+}

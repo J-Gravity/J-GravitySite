@@ -1,10 +1,10 @@
-# J-GravitySite
-### A web application to learn more about and interact with the J-Gravity Project
+# web-landing
+j-gravity web landing page
 
-TODO:
-- [ ] Recreate pages from mock-ups
-- [ ] Gather teams content
-- [ ] Credit Janus Model Creator, write content
-- [ ] Correct Dataset fields
-- [ ] Admin Approval via admin dashboard
-- [ ] Present at 42-moonlight June 7 2017
+Work in progress, but feel free to clone and host locally with Python 2:
+
+`python -m SimpleHTTPServer`
+
+demo site should be live @ https://j-gravity.github.io/web-landing/
+
+If you need a guide on helping out, reach out to qst0 asap.
