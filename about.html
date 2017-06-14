@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/gravity.css">
+		<style>
+			img {
+				width: 100%;
+				height: auto;
+			}
+			
+		</style>
+	</head>
+
+	<body>
+		<a href="#home">Home</a>
+		<a href="#team">Team</a>
+		<a href="about.html">About</a>
+		<a href="contact.html">#contact</a>
+
+
+		<img src="images/mock_up2.png" class="img-responsive" alt="mock_up.png">
+		<!-- Explanation of the model  -->
+		<div>
+			<h1>What is J-Gravity?</h1>
+			<!-- Particle interaction  -->
+				<p style="font-size:22px" >J-Gravity is a project to simulate the universe based off the Janus Cosmologial Model. The Janus Model states that there are two types of matter in the universe: Positive material and Negative material. Positive matter attracts positive, and negative attracts negative, while the two's interation is to repel one another.</p>
+				<div>
+					<img src="images/Material.png" width="500" height="auto" alt="material.png"  class="img-responsive">
+				</div>
+		</div>
+
+		<!-- The missing antimatter belong in a twin universe -->
+		<div>
+			<p>Matter and antimatter exist througout the universe. The collision of such two types of matter would result astronomical amounts of gamma rays as a result entire galaxies of such particles collided with each other (a galaxy made of matter and one with antimatter), then the aftermath of the annihiliations of the particles would send gamma rays throughout the entire universe. However, no such event has ever been observed. Thus, Jean Pierre Petit came up with the idea that a huge portion of the twin matter in the universe was missing. To be precise, in a twin universe.</p>
+			<div>
+				<img src="images/gamma.png" alt="gamma rays realeased" class="img-responsive">
+
+				<img src="images/collision.jpg" width="1000" height="auto" alt class="img-responsive">
+			</div>
+		</div>
+
+
+		<!-- Teams/Branches -->
+			<!-- Algorithms -->
+			<div>
+				<h1>Algorithms</h1>
+				<div>
+					<!-- Barne's Hut -->
+					<h2>Barnes-Hut Algorithm</h2>
+						<p>The goal of the Algorithms team is to find the most efficient way to compuete all of the data sets given as parameters. The algorithm used to divide the n-bodies is the Barne's Hut Algorithm. It seperates invididual clusters of stars and treats them as one mass compared to distant bodies.</p>
+					<img src="images/barnes.png">
+				</div>
+
+
+				<div>
+					<h2>Octrees</h2>
+						<p>the Barne's hut algorithm uses a tree data structure called an Octree. Octrees are often used to partition a three-dimensional space by recursively subdidving it into eight octants. For 3D graphics and engines, octrees are commonly utilized.</p>
+					<img src="images/octree.png">
+				</div>
+
+				<div>
+					<h2>Lz4 Compression</h2>
+					<p>Simulating millions of particles is awesome, but dealing with the amount of data in terms of Teraflops is not. Each "star" has properties of position in x, y, and z, as well as mass in terms of floats. To be able to manipulate such data, a lossless compression algorithm must be used in order to downsize the data set without losing any precision, or else one small loss in data results in huge problems later on in calculations.</p>
+
+					<ul>
+						<li>Fast compression and decompression</li>
+						<li>Lossless data</li>
+						<li>Bit manipulation</li>
+					</ul>
+
+						<br> 
+						<hr style="height=50px"> 
+						<br>
+						
+
+			</div>
+
+			<!-- Physics -->
+			<div>
+				<h1>Physics</h1>
+				<div>
+					<h2 style="background-color:lightslategrey">Architecture and Design</h2>
+					<p> some sort of blurb about precision</p>
+					<p> some sort of blurb about developing architecture and logic of simulation. </p>
+				</div>
+				
+				<div>
+					<h2>Newtonian Physics <small>+ Algorithms</small></h2>		
+					<div>
+						<img src="images/newtonian_gravity.png" alt="Newtonian_gravity" style="float:right;" class="img-responsive">
+					<p>Applications of Newton's laws of gravitational force. In the physics team, special relativity is applied versus general relativity.</p>	
+					</div>
+				</div>
+
+				<div>
+					<h2>Physics Checker</h2>
+						<p>Calculations are key, and if we want a precise as possible </p>
+				</div>
+
+			</div>
+
+			<!-- Networking-->
+			<div>
+				<h1>Parallel Computing</h1>
+				<div>
+				<!-- Data Management-->
+				<p>Parallel computing is the utilization of multiple processors accross a network in order to maximize calculation speed and efficiency. more info here:
+				</div>
+			
+				<div>
+					<h2>Data Management</h2>
+
+					<!-- Divide Dataset-->
+				</div>
+
+				<div>
+					<h2>Networking Destribution</h2>
+
+					<img src="images/network.jpg" width="750" height="auto" alt="Networking Distribution">
+				</div>
+			
+				
+				<div>
+				<!-- Multithreading and Mutexes-->
+				<h2>Semaphores, Multithreading, and Mutexes</h2>
+				In computer architecture, multithreading is the ability of a central processing unit (CPU) or a single core in a multi-core processor to execute multiple processes or threads concurrently, appropriately supported by the operating system. In computer programming, a mutex (mutual exclusion object) is a program object that is created so that multiple program thread can take turns sharing the same resource, such as access to a file.
+				<img src="images/semaphores.png" width="250" height="auto" alt="semaphores.png" class="img-responsive">
+				<!-- TCP Connections -->
+
+				</div>	
+			</div>
+
+			<!-- Visualization  -->
+			<div>
+				<h1>Visualization</h1>
+				<div>
+				<h2>Multithreading and Mutexes</h2>
+				<p>Pablo donde estás por qué nos hacen así?</p>
+				<p>Multithreading is a shared concept with parallel computing, however in this scenario it is for drawing pixels within subdivided regions simultaneously. </p>
+				<img src="images/multithreading.png" width="600" height="auto" alt="multithreading.png">
+				</div>
+
+				<div>
+					<h2>Free Floating Camera</h2>
+					<p>Es este una cosa? vamos a hacer este dentro una cosa</p>
+				</div>
+				
+
+
+			</div>
+
+
+		</div>
+		
+
+
+
+<p><a href="http://www.jp-petit.org/cras1977">newtonian version of Janus model</a></p>
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</body>
+
+</html>
