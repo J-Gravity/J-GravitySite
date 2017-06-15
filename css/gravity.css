@@ -1,6 +1,8 @@
 h1 {
-	font-size: 50px;
+	font-size: 40px;
 	background-color: cadetblue;
+	text-align: justify;
+	padding: 10px;
 }
 
 h2 {
@@ -10,3 +12,4 @@ h2 {
 p {
 	font-size: 22px;
 }
+
