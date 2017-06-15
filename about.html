@@ -5,6 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 		<meta charset="UTF-8">
 		<link rel="stylesheet" href="css/gravity.css">
+		<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway:400,300%7CMontserrat:400,700">
 		<style>
 			img {
 				width: 100%;
@@ -40,7 +41,7 @@
 			</p>
 			<img src="images/gamma.png" alt="gamma rays realeased" class="img-responsive">
 			<hr>
-			<p>However, there is a problem. There is an <a href="https://press.cern/backgrounders/matterantimatter-asymmetry">imbalance between the two</a> types of matter; antimatter is greatly outnumbered. Almost all of the universe is made up of regular matter. We know this because if two galaxies of each corresponding type of matter collided, the sheer number of particles colliding would send astronomical amounts of gamma rays deep into space–which has not been observed yet.
+			<p>However, there is a problem. There is an <a href="https://press.cern/backgrounders/matterantimatter-asymmetry">imbalance between the two</a> types of matter; antimatter is greatly outnumbered. We know this because if two galaxies of each corresponding type of matter collided, the sheer number of particles and antiparticles colliding would send astronomical amounts of gamma rays deep into space–which has not been occurred yet.
 			</p>
 
 			<img src="images/collision.jpg" width="1000" height="auto" alt="galaxy_collision.jpg" class="img-responsive">
@@ -50,7 +51,9 @@
 			<hr>
 			<p>Petit proposed that the big bang caused time to flow in two different directions. This is how the model got its name, after the <a href="https://en.wikipedia.org/wiki.Janus">Roman God Janus</a> who has two faces looking in both the future and past simultaneously.
 			</p>
-			<img src="images/twin.png" alt="twin_universe.png" class="img-responsive">
+			<img src="images/Janus.png" alt="Janus.png" class="img-responsive">
+			<p>The twin universes are facing in opposite directions of time, looking both forward <i>and</i> backward.</p>
+			<img src="images/twin2.png" alt="twin_universe.png" class="img-responsive">
 			
 		</div>
 		<hr>
@@ -79,7 +82,7 @@
 				<div>
 					<p>Newton's laws of universal graivation states that all particles in the universe have an effect on all other particles in the universe using a force that is directly proportional to the product of their masses and inversely proportional to the square of the distance between their centers. The inductive reasoning and general phyiscal law derived from empirical observations by what Newton called inductive reasoning. <a href="https://en.wikipedia.org/wiki/Philosophi%C3%A6_Naturalis_Principia_Mathematica">Philosophiæ Naturalis Principia Mathematica ("the Principia")</a>, first published on July 5th, 1686 includes classical mechanics and was presented to the <a href="https://en.wikipedia.org/wiki/Royal_Society">Royal Society</a>.
 					</p>
-					<img src="images/newtonian_gravity.png" alt="Newtonian_gravity" class="img-responsive">
+					<p title="Image Source: Wikipedia"><img src="images/newtonian_gravity.png" alt="Newtonian_gravity" class="img-responsive"></p>
 				</div>
 				<hr>
 				<h2>Special Relativity</h2>
@@ -89,7 +92,7 @@
 						<li style="font-size:20px;">The laws of physics are idential in all intertial systems, or non-accelerating frames of reference.</li>
 						<li style="font-size:20px;">The speed of light in a vacuum is the same for all observers, regardless of the motion of the light source.</li>
 					</ol>
-					<img src="images/relativity.png" alt="relativity.png" class="img-responsive">
+					<p title="Image Source: Wikipedia"><img src="images/relativity.png" alt="relativity.png" class="img-responsive"></p>
 				</div>
 			</div>
 		
@@ -104,17 +107,17 @@
 				<!-- Barne's Hut -->
 				<h2>Barnes-Hut Algorithm</h2>
 				<p>The main goal of the algorithms team was to find the most efficient way to compute all of the data sets constantly passs around. The algorithm used to divide the n-bodies is the <a href="https://en.wikipedia.org/wiki/Barnes%E2%80%93Hut_simulation">Barnes-Hut Algorithm</a>. There are fancy variants of it such as the <a href="https://en.wikipedia.org/wiki/Fast_multipole_method">Fast Multipole Method</a> but essentially they all boil down to the same concept of considering small portions of space that hold multiple particles and treats them as one collective body to be calculated and makes approximations that hold as little error as possible.</p>
-				<img src="images/barnes.png">
+				<p title="Image source: Wikipedia"><img src="images/barnes.png"></p>
 				<p>Multipole Acceptance Criterion, which is a method to determine whether or not two cells inside an octree are able to be approximated within margins of error to treat the bodies inside a cell of an octree as one collective at its center of mass and gravitational pull, reducing the amount of calculations drastically..</p>
 			</div>
 
 			<div>
 				<h2>Octrees</h2>
 				<p>The Barnes-Hut algorithm uses an octree data structure. Octrees are often used to partition a three-dimensional space by recursively subdidving the space into eight octants. Other common areas of application are in patial indexing, searching for the nearest neighbors, and finite element analysis. To generate an octree, a method called morton ordering allows one to take a set of 3d points that is inside a 1-dimesional array and sorts them so that the points near each other on the 1-dimensional line are near each other in 3-dimensional space.</p>
-				<img src="images/octree.png">
+				<p title="Image source: Wikipedia"><img src="images/octree.png"></p>
 				<h2>Morton Ordering</h2>
 				<p>To generate an octree, a method called morton ordering allows one to take a set of 3d points that is inside a 1-dimesional array and sorts them so that the points near each other on the 1-dimensional line are near each other in 3-dimensional space. It is also commonly known as "<a href="https://en.wikipedia.org/wiki/Z-order_curve">z-ordering</a>" due to the shape of its functionality. Below is four iterations of the Z-order curve.</p>
-				<img src="images/z_curve.png" alt="z_curve.png" class="img-responsive">
+				<p title="Image source: Wikipedia"><img src="images/z_curve.png" alt="z_curve.png" class="img-responsive"></p>
 		
 			</div>
 		
@@ -135,24 +138,19 @@
 			<div>
 				<h1>Networking</h1>
 				<hr>
-				<div>
-				<!-- Data Management-->
-				<p>Parallel computing is the utilization of multiple processors accross a network in order to maximize calculation speed and efficiency. The head dispatcher </p>
-				</div>
 			
 				<div>
-					<h2>Data Management</h2>
-
 					<!-- Divide Dataset-->
 				</div>
 
 				<div>
 					<h2>Networking Destribution</h2>
-
-					<img src="images/parallel.jpg" width="750" height="auto" alt="Networking Distribution">
+					<p>The networking distribution is set up with a system of work units that are divided into subsets among workers sent from a dispatcher. The work units are placed onto a bundle queue to be multithreaded and de-bundled and sent to workers that receive their own individual set of data to be calculated. Once workers have completed their calculations and found the new positions of the particles, they are placed onto a queue wait to coalesce all the data back together to form 1 “tick” of an iteration of “time.” The dispatcher receives the data and creates an event thread that sends the data back out onto a worker bundle queue to have the next tick calculated.</p>
+	
+<p title="42 Lab"><img src="images/parallel.jpg" width="750" height="auto" alt="Networking Distribution"></p>
 				</div>
-			
-				
+				<h2>Data Management</h2>	
+				<p>While between all of the iterations of caluclations, there is a physics checker that ensures data loss is at its minimal. It is everyone's job to ensure that data is being properly transferred, that it is not being corrupted during the transfer, and that if multithreading is being applied the data must arrive in the correct order.</p>
 				<div>
 				<!-- Multithreading and Mutexes-->
 				<h2>Semaphores, Multithreading, and Mutexes</h2>
@@ -161,7 +159,7 @@
 				<!-- TCP Connections -->
 				<h2>Transmission Control Protocol</h2>
 				<p><abbr title="Trasnmission Control Protocol">TCP</abbr> (Transmission Control Protocol) is a protocol that has appealing of features that made us choose it over just plain <abbr title="User Datagram Protocol">UDP</abbr>. The features that made it attractive to us for this short term project were as follows, It guarantees that data is not lost in transmission, it guarantees that the data is not corrupted during transmission(in most cases), and it ensures that the data arrives in the same order that it was sent. It was also quick and easy to implement for such a short term project.</p>
-				<img src="images/tcp.png" alt="tcp.png" class="img-responsive"> 
+				<p title="Image source: Wikipedia"><img src="images/tcp.png" alt="tcp.png" class="img-responsive"></p>
 				</div>	
 			</div>
 
