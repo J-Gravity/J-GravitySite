@@ -10,7 +10,9 @@
 				width: 100%;
 				height: auto;
 			}
-			
+			p {
+				text-align: justify;
+			}
 		</style>
 	</head>
 
@@ -19,95 +21,123 @@
 		<a href="#team">Team</a>
 		<a href="about.html">About</a>
 		<a href="contact.html">#contact</a>
-
-
-		<img src="images/mock_up2.png" class="img-responsive" alt="mock_up.png">
+		<img src="images/title.png" class="img-responsive" alt="mock_up.png">
+		<hr>
 		<!-- Explanation of the model  -->
 		<div>
 			<h1>What is J-Gravity?</h1>
-			<!-- Particle interaction  -->
-				<p style="font-size:22px" >J-Gravity is a project to simulate the universe based off the Janus Cosmologial Model. The Janus Model states that there are two types of matter in the universe: Positive material and Negative material. Positive matter attracts positive, and negative attracts negative, while the two's interation is to repel one another.</p>
-				<div>
-					<img src="images/Material.png" width="500" height="auto" alt="material.png"  class="img-responsive">
-				</div>
+			<hr>
+			<p>J-Gravity is a project based off of the Janus Cosmological Model established by <a href="https://en.wikipedia.org/wiki/Jean-Pierre_Petit" style="color:black">Jean-Pierre Petit</a>. This model states that there are two types of material (or matter) in the universe: Positive material and Negative material. Positive matter attracts other positive matter, negative matter attracts other negative matter, and positive matter and negative matter repel each other.
+			</p>
+			<img src="images/Material.png" alt="material.png"  class="img-responsive">
+			<p>The project uses this property of particle interaction  to design a simulation of a universe. An n-body amount of particles are calculated based on their gravitational pull with each other, then rendered to visualize the velocities of particles and their changes in space over time.</p>
 		</div>
 
+		<hr>
 		<!-- The missing antimatter belong in a twin universe -->
 		<div>
-			<p>Matter and antimatter exist througout the universe. The collision of such two types of matter would result astronomical amounts of gamma rays as a result entire galaxies of such particles collided with each other (a galaxy made of matter and one with antimatter), then the aftermath of the annihiliations of the particles would send gamma rays throughout the entire universe. However, no such event has ever been observed. Thus, Jean Pierre Petit came up with the idea that a huge portion of the twin matter in the universe was missing. To be precise, in a twin universe.</p>
-			<div>
-				<img src="images/gamma.png" alt="gamma rays realeased" class="img-responsive">
+			<p>In particle physics, matter and antimatter exist throughout the entire universe. The collision of matter and antimatter releases a pair of gamma rays.
+			</p>
+			<img src="images/gamma.png" alt="gamma rays realeased" class="img-responsive">
+			<hr>
+			<p>However, there is a problem. There is an <a href="https://press.cern/backgrounders/matterantimatter-asymmetry">imbalance between the two</a> types of matter; antimatter is greatly outnumbered. Almost all of the universe is made up of regular matter. We know this because if two galaxies of each corresponding type of matter collided, the sheer number of particles colliding would send astronomical amounts of gamma rays deep into space–which has not been observed yet.
+			</p>
 
-				<img src="images/collision.jpg" width="1000" height="auto" alt class="img-responsive">
-			</div>
+			<img src="images/collision.jpg" width="1000" height="auto" alt="galaxy_collision.jpg" class="img-responsive">
+			<hr>
+			<p>Thus, Petit theorized that if the antimatter was missing in <i>this</i> universe, then it must be in another one. To be precise, a twin universe. Below is a familiar image of the big bang, and the expansion of the universe following afterwards.</p>
+			<img src="images/big_bang.png" alt="big_bang.png" class="img-responsive">
+			<hr>
+			<p>Petit proposed that the big bang caused time to flow in two different directions. This is how the model got its name, after the <a href="https://en.wikipedia.org/wiki.Janus">Roman God Janus</a> who has two faces looking in both the future and past simultaneously.
+			</p>
+			<img src="images/twin.png" alt="twin_universe.png" class="img-responsive">
+			
 		</div>
+		<hr>
 
+		<!-- Breakdown of Project -->
+
+		<h1 style="font-size:50px;background-color:black;color:white;padding:10px;">
+			Breaking Down the Project:
+		</h1>
+		
+		<p>Due to the immensity of the size of the project concerning moving millions of particle data sets around from team to team, the method of handling data between each team needs to be precise. The Maths and Physics encompassing most of the overall project needs to be as accurate as possible. The algorithms and implementations used are an attempt to combat the possible areas of data loss.</p>
+		<hr>
 
 		<!-- Teams/Branches -->
-			<!-- Algorithms -->
+		<!-- Physics -->
+		<div>
+			<h1>Physics</h1>
+			<hr>
 			<div>
-				<h1>Algorithms</h1>
-				<div>
-					<!-- Barne's Hut -->
-					<h2>Barnes-Hut Algorithm</h2>
-						<p>The goal of the Algorithms team is to find the most efficient way to compuete all of the data sets given as parameters. The algorithm used to divide the n-bodies is the Barne's Hut Algorithm. It seperates invididual clusters of stars and treats them as one mass compared to distant bodies.</p>
-					<img src="images/barnes.png">
-				</div>
-
-
-				<div>
-					<h2>Octrees</h2>
-						<p>the Barne's hut algorithm uses a tree data structure called an Octree. Octrees are often used to partition a three-dimensional space by recursively subdidving it into eight octants. For 3D graphics and engines, octrees are commonly utilized.</p>
-					<img src="images/octree.png">
-				</div>
-
-				<div>
-					<h2>Lz4 Compression</h2>
-					<p>Simulating millions of particles is awesome, but dealing with the amount of data in terms of Teraflops is not. Each "star" has properties of position in x, y, and z, as well as mass in terms of floats. To be able to manipulate such data, a lossless compression algorithm must be used in order to downsize the data set without losing any precision, or else one small loss in data results in huge problems later on in calculations.</p>
-
-					<ul>
-						<li>Fast compression and decompression</li>
-						<li>Lossless data</li>
-						<li>Bit manipulation</li>
-					</ul>
-
-						<br> 
-						<hr style="height=50px"> 
-						<br>
-						
-
+				<h2 style="background-color:lightslategrey">Architecture and Design</h2>
+				<p>Physics is the foundation of the laws of the universe as we know it and it is also the infrastructure in which the team designed the project upon. Fundamental equations and properties were used to extrapolate and build from scratch and maintain the project. Methods such as FMM (Fast Multipole Methodi) and Particle Mesh as well as others were considered but rejected based on the time constraints of 6 weeks to complete the project. </p>
 			</div>
 
-			<!-- Physics -->
 			<div>
-				<h1>Physics</h1>
+				<h2>Newtonian Physics</h2>		
 				<div>
-					<h2 style="background-color:lightslategrey">Architecture and Design</h2>
-					<p> some sort of blurb about precision</p>
-					<p> some sort of blurb about developing architecture and logic of simulation. </p>
+					<p>Newton's laws of universal graivation states that all particles in the universe have an effect on all other particles in the universe using a force that is directly proportional to the product of their masses and inversely proportional to the square of the distance between their centers. The inductive reasoning and general phyiscal law derived from empirical observations by what Newton called inductive reasoning. <a href="https://en.wikipedia.org/wiki/Philosophi%C3%A6_Naturalis_Principia_Mathematica">Philosophiæ Naturalis Principia Mathematica ("the Principia")</a>, first published on July 5th, 1686 includes classical mechanics and was presented to the <a href="https://en.wikipedia.org/wiki/Royal_Society">Royal Society</a>.
+					</p>
+					<img src="images/newtonian_gravity.png" alt="Newtonian_gravity" class="img-responsive">
 				</div>
+				<hr>
+				<h2>Special Relativity</h2>
+				<div>
+					<p>As the project progressed, the physics team added special relativity as a feature as it is more accurate in modeling objects moving at incredibly fast speeds. Developed by Albert Einstein, special relativity is generally accepted and experimentally well-confirmed physical theory regarding the relationship between space and time. It states that:</p>
+					<ol>
+						<li style="font-size:20px;">The laws of physics are idential in all intertial systems, or non-accelerating frames of reference.</li>
+						<li style="font-size:20px;">The speed of light in a vacuum is the same for all observers, regardless of the motion of the light source.</li>
+					</ol>
+					<img src="images/relativity.png" alt="relativity.png" class="img-responsive">
+				</div>
+			</div>
+		
+		</div>
+
+		<!-- Algorithms -->
+		<hr>
+		<div>
+			<h1>Algorithms</h1>
+			<hr>
+			<div>
+				<!-- Barne's Hut -->
+				<h2>Barnes-Hut Algorithm</h2>
+				<p>The main goal of the algorithms team was to find the most efficient way to compute all of the data sets constantly passs around. The algorithm used to divide the n-bodies is the <a href="https://en.wikipedia.org/wiki/Barnes%E2%80%93Hut_simulation">Barnes-Hut Algorithm</a>. There are fancy variants of it such as the <a href="https://en.wikipedia.org/wiki/Fast_multipole_method">Fast Multipole Method</a> but essentially they all boil down to the same concept of considering small portions of space that hold multiple particles and treats them as one collective body to be calculated and makes approximations that hold as little error as possible.</p>
+				<img src="images/barnes.png">
+				<p>Multipole Acceptance Criterion, which is a method to determine whether or not two cells inside an octree are able to be approximated within margins of error to treat the bodies inside a cell of an octree as one collective at its center of mass and gravitational pull, reducing the amount of calculations drastically..</p>
+			</div>
+
+			<div>
+				<h2>Octrees</h2>
+				<p>The Barnes-Hut algorithm uses an octree data structure. Octrees are often used to partition a three-dimensional space by recursively subdidving the space into eight octants. Other common areas of application are in patial indexing, searching for the nearest neighbors, and finite element analysis. To generate an octree, a method called morton ordering allows one to take a set of 3d points that is inside a 1-dimesional array and sorts them so that the points near each other on the 1-dimensional line are near each other in 3-dimensional space.</p>
+				<img src="images/octree.png">
+				<h2>Morton Ordering</h2>
+				<p>To generate an octree, a method called morton ordering allows one to take a set of 3d points that is inside a 1-dimesional array and sorts them so that the points near each other on the 1-dimensional line are near each other in 3-dimensional space. It is also commonly known as "<a href="https://en.wikipedia.org/wiki/Z-order_curve">z-ordering</a>" due to the shape of its functionality. Below is four iterations of the Z-order curve.</p>
+				<img src="images/z_curve.png" alt="z_curve.png" class="img-responsive">
+		
+			</div>
+		
+			<div>
+				<h2>LZ4 Compression</h2>
+				<p>Simulating millions of particles is awesome, but handling the ginormous amount data is not. Each "star" has properties of position in x, y, and z, as well as mass in terms of floats. To be able to pass around huge sets of data, a lossless compression algorithm must be used in order to compress and decompress the data set without losing any precision on data, or else small losses in data spirals into more and more inaccurate inaccurate calculations with the progression of time.</p>
+				<p>LZ4 belongs to the LZ77 byte-oriented compressoin family and features:</p>
+				<ul>
+					<li>Fast compression and decompression</li>
+					<li>Lossless data</li>
+					<li>Bit manipulation</li>
+				</ul>
 				
-				<div>
-					<h2>Newtonian Physics <small>+ Algorithms</small></h2>		
-					<div>
-						<img src="images/newtonian_gravity.png" alt="Newtonian_gravity" style="float:right;" class="img-responsive">
-					<p>Applications of Newton's laws of gravitational force. In the physics team, special relativity is applied versus general relativity.</p>	
-					</div>
-				</div>
-
-				<div>
-					<h2>Physics Checker</h2>
-						<p>Calculations are key, and if we want a precise as possible </p>
-				</div>
-
+				<hr> 
+						
 			</div>
-
 			<!-- Networking-->
 			<div>
-				<h1>Parallel Computing</h1>
+				<h1>Networking</h1>
+				<hr>
 				<div>
 				<!-- Data Management-->
-				<p>Parallel computing is the utilization of multiple processors accross a network in order to maximize calculation speed and efficiency. more info here:
+				<p>Parallel computing is the utilization of multiple processors accross a network in order to maximize calculation speed and efficiency. The head dispatcher </p>
 				</div>
 			
 				<div>
@@ -119,21 +149,26 @@
 				<div>
 					<h2>Networking Destribution</h2>
 
-					<img src="images/network.jpg" width="750" height="auto" alt="Networking Distribution">
+					<img src="images/parallel.jpg" width="750" height="auto" alt="Networking Distribution">
 				</div>
 			
 				
 				<div>
 				<!-- Multithreading and Mutexes-->
 				<h2>Semaphores, Multithreading, and Mutexes</h2>
-				In computer architecture, multithreading is the ability of a central processing unit (CPU) or a single core in a multi-core processor to execute multiple processes or threads concurrently, appropriately supported by the operating system. In computer programming, a mutex (mutual exclusion object) is a program object that is created so that multiple program thread can take turns sharing the same resource, such as access to a file.
-				<img src="images/semaphores.png" width="250" height="auto" alt="semaphores.png" class="img-responsive">
+				<p>In computer architecture, multithreading is the ability of a central processing unit (CPU) or a single core in a multi-core processor to execute multiple processes or threads concurrently, appropriately supported by the operating system. In computer programming, a mutex (mutual exclusion object) is a program object that is created so that multiple program thread can take turns sharing the same resource, such as access to a file.</p>
+				<img src="images/semaphores.png" alt="semaphores.png" class="img-responsive">
 				<!-- TCP Connections -->
-
+				<h2>Transmission Control Protocol</h2>
+				<p><abbr title="Trasnmission Control Protocol">TCP</abbr> (Transmission Control Protocol) is a protocol that has appealing of features that made us choose it over just plain <abbr title="User Datagram Protocol">UDP</abbr>. The features that made it attractive to us for this short term project were as follows, It guarantees that data is not lost in transmission, it guarantees that the data is not corrupted during transmission(in most cases), and it ensures that the data arrives in the same order that it was sent. It was also quick and easy to implement for such a short term project.</p>
+				<img src="images/tcp.png" alt="tcp.png" class="img-responsive"> 
 				</div>	
 			</div>
 
-			<!-- Visualization  -->
+			<hr>
+
+
+			<!-- Visualization  >
 			<div>
 				<h1>Visualization</h1>
 				<div>
@@ -149,31 +184,19 @@
 				</div>
 				
 
+			</div-->
 
-			</div>
+			<hr>
+
+			<!-- Web >
+			<div>
+				<h2>Web</h2>
+				
+
+			</div-->
 
 
 		</div>
 		
-
-
-
-<p><a href="http://www.jp-petit.org/cras1977">newtonian version of Janus model</a></p>
-		
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 	</body>
-
 </html>
