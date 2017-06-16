@@ -8,7 +8,7 @@
 		<meta charset="utf-8">
 		<script type="text/javascript">
 	</script>
-	<link rel="icon" href="static/images/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="static/images/brand.png" type="image/x-icon">
 	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway:400,300%7CMontserrat:400,700">
 	<link rel="stylesheet" href="static/css/style.css">
 </head>
@@ -42,7 +42,17 @@
 
 		<div class="shell shell-wide">
 			<div class="range range-md-middle">
-				<div class="cell-md-6"><a href="index.html" class="brand"><img src="static/images/brand.png" width="235" height="142" alt="" class="img-responsive"></a></div>
+<script src="https://code.jquery.com/jquery-latest.min.js"></script>
+<script>
+$(function(){
+  $(".brand").click(function(){
+    var $brand = $(".brand");
+    $brand.removeClass("spinEffect");
+    setTimeout(function(){$brand.addClass("spinEffect")},0);
+  });
+});
+</script>
+				<div class="cell-md-6"><img class="brand" src="static/images/brand.png" width="235" height="142" alt="" class="img-responsive"></div>
 				<div class="cell-md-6 text-md-right">
 					<address class="address">
 						<p>Laniakea Supercluster, Virgo Cluster, Milky Way Galaxy, Orion Arm, Sol, Earth, 42 School Silicon Valley</p>
@@ -56,7 +66,7 @@
 		</div>
 		<div id="home" data-type="anchor" class="shell shell-wide">
 			<div class="range">
-				<div class="cell-lg-preffix-1 cell-lg-8 cell-xl-6">
+				<div style="border: 1px solid black; background-color: rgba(0, 0, 0, 0.5); padding: 5em;" class="cell-lg-preffix-1 cell-lg-8 cell-xl-6">
 					<h1>Recreate<br class="hidden visible-lg-inline-block">
 						our universe
 					</h1>
@@ -81,11 +91,11 @@
 		<section class="bg-white section-50 section-lg-80 section-xl-100">
 		<div id="about" data-type="anchor" class="shell shell-wide">
 			<div class="range text-center">
-				<div class="cell-lg-5 text-md-left text-lg-right">
-					<div class="box-wrap text-md-left">
+				<div class="text-center">
+					<div class="box-wrap">
 						<h2 class="heading">Mission</h2>
 						<p>
-						The J-Gravity project is an attempt to simulate the universe as detailed by the Janus Cosmotological Model.
+						The J-Gravity project is an attempt to simulate the universe as detailed by the <a href="https://www.savoir-sans-frontieres.com/JPP/telechargeables/English/janus/The%20Janus%20Cosmological%20Model.pdf">Janus Cosmotological Model.</a>
 						</p>
 					</div>
 				</div>
@@ -93,111 +103,97 @@
 		</div>
 		</section>
 
-		<!-- Our team-->
-		<section class="section-55 bg-white section-xl-120 section-xl-bottom-0 section-lg-bottom-80">
+		<section class="section-55 bg-white">
 		<div id="team" data-type="anchor" class="shell shell-wide">
 			<div class="range range-lg-bottom range-xl-top">
 				<div class="cell-lg-preffix-1 cell-lg-2">
 				</div>
-				<div class="cell-lg-4 offset-xl-top-60">
+				<div>
 					<h2 class="heading heading-custom">J-Gravity Crew</h2>
 				</div>
-				<div class="cell-lg-6"></div>
 			</div>
 			<div class="range range-sm-center range-lg-left">
 
-				<div class="cell-sm-4 cell-lg-2 cell-xl-preffix-1"><img src="static/images/medium_pmclaugh.jpg" width="170" height="110" alt="" class="img-responsive">
+				<div class="text-center cell-sm-3"><img src="static/images/medium_pmclaugh.png" width="170" height="110" alt="" class="img-responsive">
 					<h4>Phil<br class="hidden visible-lg">
 						McLaughlin
 					</h4>
-					<p>GPU</p>
 				</div>
 
-				<div class="cell-sm-4 cell-lg-2 cell-xl-preffix-1"><img src="static/images/medium_palatorr.jpg" width="170" height="110" alt="" class="img-responsive">
+				<div class="text-center cell-sm-3"><img src="static/images/medium_palatorr.png" width="170" height="110" alt="" class="img-responsive">
 					<h4>Pablo<br class="hidden visible-lg">
 						Alatorre
 					</h4>
-					<p>Visualization</p>
 				</div>
 
-				<div class="cell-sm-4 cell-lg-2 cell-xl-preffix-1"><img src="static/images/medium_cyildiri.jpg" width="170" height="110" alt="" class="img-responsive">
+				<div class="text-center cell-sm-3"><img src="static/images/medium_cyildiri.png" width="170" height="110" alt="" class="img-responsive">
 					<h4>Can<br class="hidden visible-lg">
 						Yildirim
 					</h4>
-					<p>Networking</p>
 				</div>
 
-				<div class="cell-sm-4 cell-lg-2 cell-xl-preffix-1"><img src="static/images/medium_smifsud.jpg" width="170" height="110" alt="" class="img-responsive">
+				<div class="text-center cell-sm-3"><img src="static/images/medium_smifsud.png" width="170" height="110" alt="" class="img-responsive">
 					<h4>Sawyer<br class="hidden visible-lg">
 							Mifsud
 					</h4>
-					<p>Physics</p>
 				</div>
 
-				<div class="cell-sm-4 cell-lg-2 cell-xl-preffix-1"><img src="static/images/medium_eliu.jpg" width="170" height="110" alt="" class="img-responsive">
+				<div class="text-center cell-sm-3"><img src="static/images/medium_eliu.png" width="170" height="110" alt="" class="img-responsive">
 					<h4>Ezekiel<br class="hidden visible-lg">
 						Liu
 					</h4>
-					<p>GPU</p>
 				</div>
 
-				<div class="cell-sm-4 cell-lg-2 cell-xl-preffix-1"><img src="static/images/medium_iwagner.jpg" width="170" height="110" alt="" class="img-responsive">
+				<div class="text-center cell-sm-3"><img src="static/images/medium_iwagner.png" width="170" height="110" alt="" class="img-responsive">
 					<h4>Ian<br class="hidden visible-lg">
 						Wagner
 					</h4>
-					<p>Networking</p>
 				</div>
 
-				<div class="cell-sm-4 cell-lg-2 cell-xl-preffix-1"><img src="static/images/medium_kialvare.jpg" width="170" height="110" alt="" class="img-responsive">
+				<div class="text-center cell-sm-3"><img src="static/images/medium_kialvare.png" width="170" height="110" alt="" class="img-responsive">
 					<h4>Kim<br class="hidden visible-lg">
 						Alvare
 					</h4>
-					<p>Web</p>
 				</div>
 
-				<div class="cell-sm-4 cell-lg-2 cell-xl-preffix-1"><img src="static/images/medium_myoung.jpg" width="170" height="110" alt="" class="img-responsive">
+				<div class="text-center cell-sm-3"><img src="static/images/medium_myoung.png" width="170" height="110" alt="" class="img-responsive">
 					<h4>Mason<br class="hidden visible-lg">
 						Young
 					</h4>
-					<p>Web</p>
 				</div>
 
-				<div class="cell-sm-4 cell-lg-2 cell-xl-preffix-1"><img src="static/images/medium_cterrill.jpg" width="170" height="110" alt="" class="img-responsive">
+				<div class="text-center cell-sm-3"><img src="static/images/medium_cterrill.png" width="170" height="110" alt="" class="img-responsive">
 					<h4>Colby<br class="hidden visible-lg">
 						Terrill
 					</h4>
-					<p>Web</p>
 				</div>
 
-				<div class="cell-sm-4 cell-lg-2 cell-xl-preffix-1"><img src="static/images/medium_ssmith.jpg" width="170" height="110" alt="" class="img-responsive">
+				<div class="text-center cell-sm-3"><img src="static/images/medium_ssmith.png" width="170" height="110" alt="" class="img-responsive">
 					<h4>Sean<br class="hidden visible-lg">
 						Smith
 					</h4>
-					<p>Networking</p>
 				</div>
 
-				<div class="cell-sm-4 cell-lg-2 cell-xl-preffix-1"><img src="static/images/medium_scollet.jpg" width="170" height="110" alt="" class="img-responsive">
+				<div class="text-center cell-sm-3"><img src="static/images/medium_scollet.png" width="170" height="110" alt="" class="img-responsive">
 					<h4>Sam<br class="hidden visible-lg">
 						Collet
 					</h4>
-					<p>Networking</p>
 				</div>
 
-				<div class="cell-sm-4 cell-lg-2 cell-xl-preffix-1"><img src="static/images/medium_elee.jpg" width="170" height="110" alt="" class="img-responsive">
+				<div class="text-center cell-sm-3"><img src="static/images/medium_elee.png" width="170" height="110" alt="" class="img-responsive">
 					<h4>Eung Bum<br class="hidden visible-lg">
 						Lee
 					</h4>
-					<p>Networking</p>
 				</div>
 
-				<div class="cell-sm-8 offset-top-40 offset-sm-top-50 cell-lg-6 offset-lg-top-0 cell-xl-preffix-1 cell-xl-4 offset-xl-top--20 section-xl-bottom-0">
+				<div class="cell-sm-8 offset-top-40 offset-sm-top-50 text-center">
 					<div class="box-wrap-1">
 						<div class="box-wrap-1-caption">
 							<div class="h2 heading heading-mod">Active 42</div>
 							<div class="h3">peer-to-peer <br>students</div>
 						</div>
 						<div class="box-wrap-1-caption">
-							<div class="h2 heading heading-mod">15</div>
+							<div class="h2 heading heading-mod">12</div>
 							<div class="h3">j-gravity <br>members</div>
 						</div>
 					</div>
@@ -212,12 +208,33 @@
 			<div class="range range-md-around range-sm-reverse">
 				<div class="col-sm-4 cell-lg-preffix-4 cell-lg-3 text-lg-center offset-xl-top--20 cell-md-2">
 				</div>
-				<div class="col-sm-8 cell-lg-preffix-1 cell-lg-4 cell-md-8">
+				<div style="border: 1px solid black; background-color: rgba(0, 0, 0, 0.5); padding: 1em;" class="col-sm-8 cell-lg-preffix-1 cell-lg-4 cell-md-8">
 					<h2 class="heading">How to simulate the universe</h2>
 					<p class="inset-xl-right-80">
-					This will be a great place for us to explain the details
-					We need info from each team here, I should gather it asap.
+					To simulate the universe, first you must create a universe...
 					</p>
+					<p class="inset-xl-right-80">
+					J-Gravity is held together by communitaction across the whole crew.	
+					</p>
+					<h3>The Teams:</h3>
+					<p class="inset-xl-right-80">
+					Move the growing dataset across the simulation to perform distributed computing.</p>
+					<h3>Networking</h3>
+					<p class="inset-xl-right-80">
+					Harness the power of the networked computers to perform GPU computation.</p>
+					<h3>Processing</h3>
+					<p class="inset-xl-right-80">
+					Visualize the massive amount of processed data in the cosmological model.
+					</p>
+					<h3>Rendering</h3>
+					<p class="inset-xl-right-80">
+					Confirm the validity of the simulation with highly accurate scaled comparison.
+					</p>
+					<h3>Physics</h3>
+					<p class="inset-xl-right-80">
+					Share our progress and findings online and provide answers to anyone curious.
+					</p>
+					<h3>Web</h3>
 				</div>
 			</div>
 		</div>
@@ -226,12 +243,12 @@
 		<section class="section-50 bg-white section-lg-80">
 		<div class="shell shell-wide">
 			<div class="range decoration">
-				<div class="cell-lg-7 text-center offset-xl-top--160"><img src="static/images/hub4.jpg" width="955" height="588" alt="" class="img-responsive"></div>
+				<div class="cell-lg-7 text-center offset-xl-top--160"><img src="static/images/Kosmisches-Netz.jpg" width="955" height="588" alt="" class="img-responsive"></div>
 			</div>
 			<div class="range">
 				<div class="cell-lg-preffix-4 cell-lg-6">
-					<h4><a href="#"> Hubble Helps Solve Mystery of<br class="hidden visible-xl">'Born Again' Stars.</a></h4>
-					<p class="postfix-xl-right--30">For the past 60 years, astronomers have been puzzled by an unusual type of star that looks hotter and bluer than it should for its age. It has been dubbed a "blue straggler" because it seems to lag behind the evolution of neighboring stars.</p>
+					<h4><a href="http://www.media.uzh.ch/en/Press-Releases/2017/Virtual-Kosmos.html">The Largest Virtual Universe <br class="hidden visible-xl">Ever Simulated.</a></h4>
+					<p class="postfix-xl-right--30">An amazing team of researchers at the University of Zurich have simulated the formation of the universe with a 2 trillion particle set! We strive to reach this truly universal scale. The data from this study is not only taking us steps closer to understanding dark matter, but also being used to calibrate the Euclid satellite that will be launched in 2020. The image shows a cosmic web, a billion light years across. Showing how dark matter shapes the universe. Image Credit: Joachim Stadel</p>
 				</div>
 			</div>
 			<div id="news" data-type="anchor" class="range offset-xl-top-100">
@@ -239,25 +256,25 @@
 					<h2 class="heading offset-xl-top-5 heading-mod">Our universe unfolding</h2>
 				</div>
 				<div class="cell-lg-preffix-1 cell-xl-6 cell-lg-6">
-					<h4><a href="#">NASA Space Telescopes See Magnified Image of<br class="hidden visible-xl">the Faintest Galaxy from the Early Universe.</a></h4>
-					<p>Hunting for faraway galaxies that existed long, long ago is like a fishing trip for astronomers. So far only the "big fish" have been found, bright galaxies that existed just a few hundred million years after the big bang.</p>
+					<h4><a href="https://arxiv.org/pdf/gr-qc/9706049.pdf">Gravitational Repulsion: <br class="hidden visible-xl">Strange and not so Strange Negative Masses.</a></h4>
+					<p>Negative and mass and its gravitational repulsion are alien to general realtivity. This paper shows how small negative fluctuations play an important role in the shaping of our universe. As if they have a negative gravitational mass!</p>
 				</div>
 			</div>
 			<div class="range range-lg-right decoration-custom offset-xl-top-60">
 				<div class="cell-lg-6">
-					<h4> <a href="#"> Cosmic filaments exposed near huge cluster.</a></h4>
-					<p>ESA’s XMM-Newton X-ray observatory has revealed three massive filaments of hot gas flowing towards a<br class="hidden visible-xl">cluster of galaxies, uncovering a portion of the cosmic skeleton that pervades the entire Universe.</p>
+					<h4> <a href="https://www.savoir-sans-frontieres.com/JPP/telechargeables/English/janus/The%20Janus%20Cosmological%20Model.pdf">The Janus Cosmological Model.</a></h4>
+					<p>Our team wants to give a special Thank You to the Janus Cosmological Model and it's creator Jean-Pierre Petit. Which inspired our team to create a powerful simulatio to test the ideas in the model. 40 Years of research stopped at testing with only 30,000 particles. With our access to the comptuers at 42 Silicon Valley we hope to run at least a quarter billion particles, and more every week!</p>
 				</div>
 			</div>
 			<div class="range range-lg-center offset-xl-top-150">
-				<div class="cell-lg-6 text-center offset-xl-bottom--200"><img src="static/images/hub4.jpg" width="869" height="529" alt="" class="img-responsive"></div>
+				<div class="cell-lg-6 text-center offset-xl-bottom--200"><img src="static/images/jppcartoon.png" width="869" height="529" alt="" class="img-responsive"></div>
 			</div>
 		</div>
 		</section>
 		</main>
 
 		<footer class="page-foot bg-image bg-image-3 bg-fixed">
-		<div id="contacts" data-type="anchor" class="shell shell-wide">
+		<div style="border: 1px solid black; background-color: rgba(0, 0, 0, 0.5); padding: 5em;" id="contacts" data-type="anchor" class="shell shell-wide">
 			<div class="range">
 				<div class="cell-md-5 cell-xl-3">
 					<h2 class="heading heading-mod">contact</h2>
@@ -278,8 +295,7 @@
 								</ul>
 							</div>
 						</div>
-						<div class="cell-lg-3 text-lg-center cell-xl-10 text-xl-left offset-xl-top-110"><a href="index.html"
-							class="brand preffix-xl-left-30"><img src="static/images/brand.png" width="235" height="142" alt="" class="img-responsive"></a>
+						<div class="cell-lg-3 text-lg-center cell-xl-10 text-xl-left offset-xl-top-110"><img class="brand" src="static/images/brand.png" width="235" height="142" alt="" class="img-responsive">
 						</div>
 					</div>
 				</div>
@@ -287,7 +303,4 @@
 		</div>
 		</footer>
 	</div>
-<script src="static/js/core.min.js"></script>
-<script src="staticjs/script.js"></script>
-<script type="text/javascript">
 </html>

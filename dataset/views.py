@@ -6,8 +6,8 @@ from .forms import DatasetForm
 from .models import Dataset
 
 # Create your views here.
-def hello(request):
-	return render(request, "hello.html")
+def index(request):
+	return render(request, "index.html")
 
 def form(request):
 	if request.method == 'POST':

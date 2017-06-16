@@ -121,6 +121,16 @@
   }
 }
 
+.spinEffect{
+  -webkit-transform-origin: 50% 50%;
+  -webkit-animation: spin 0.5s 0s linear;
+}
+
+@-webkit-keyframes spin {
+    0%  {-webkit-transform: rotate(0deg);}
+    100% {-webkit-transform: rotate(360deg);}   
+    }
+
 @media (min-width: 992px) and (max-width: 1199px) {
   .visible-md-block {
     display: block !important;
@@ -16898,7 +16908,7 @@ img + h4 {
     padding-top: 130px;
     padding-left: 140px;
     padding-bottom: 100px;
-    border-bottom: none;
+    border-bottom: 2px solid #03587f;
   }
   .box-wrap-1 * + h3,
   .box-wrap-1 * + .h3 {

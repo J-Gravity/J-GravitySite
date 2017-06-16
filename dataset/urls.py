@@ -18,5 +18,5 @@ from views import *
 
 urlpatterns = [
 	url(r'^form$', form),
-	url(r'^', hello),
+	url(r'^', index),
 ]
