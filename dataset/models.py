@@ -15,7 +15,7 @@ class Dataset(models.Model):
 	anchor_mass = models.BigIntegerField()
 	time_step = models.BigIntegerField()
 	frame_count = models.BigIntegerField()
-	approved = models.BooleanField()
+	approved = models.BooleanField(default='False')
 
 	def __str__(self):
 		return self.set_name
