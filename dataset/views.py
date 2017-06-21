@@ -5,6 +5,8 @@ from django.shortcuts import render
 from .forms import DatasetForm
 from .models import Dataset
 
+import subprocess
+
 # Create your views here.
 def index(request):
 	return render(request, "index.html")
@@ -22,6 +24,9 @@ def form(request):
 		form = DatasetForm()
 
 	return render(request, "form.html", {'form': form})
+
+def run(request):
+ render("Hello run") 
 
 #def submit(request):
 
